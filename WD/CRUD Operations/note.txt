@@ -16,10 +16,13 @@ Then type the following code in server.js
   const express = require("express");
   const mongoose = require("mongoose");
   const cors = require("cors");
-  
   require("dotenv").config();
+
+  ///middlewares
+  app.use(express.json());
+  app.use(cors());
+
   const app = express();
-  
   const PORT=process.env.PORT | 5000;
   
   app.get('/',(req,res)=>{
