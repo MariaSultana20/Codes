@@ -1,0 +1,15 @@
+Create a folder for the project.
+Create a folder for backend.
+In cmd , type
+  npx create-react-app frontend
+Open the project in vs code.
+Take two terminals, one for frontend and one for backend.
+Create a server.js file in backend. Then 
+In backend terminal, type
+  npm init -y
+
+Include "dev": "nodemon server.js" in script of package.json file . then type 
+  npm i -g nodemon 
+  npm i express mongoose dotenv cors
+
+then type the following code in server.js
