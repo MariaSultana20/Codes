@@ -41,3 +41,10 @@ Then type the following code in server.js
         useUnifiedTopology: true})
     .then(() => console.log("Mongodb is conntected.."))
     .catch((err) => console.log(err))
+
+3. For installing react icons 
+  npm install react-icons --save
+
+4. Install axios in frontend :
+  npm i axios 
+  npm i react-dev-tools
