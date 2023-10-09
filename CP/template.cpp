@@ -100,7 +100,8 @@ int kruskal(EDGE ed[],int n,int e)   ///vector<EDGE> kruskal(EDGE ed[],int n,int
 }
 int main()
 {
-    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);  
+    //freopen("input.txt", "r", stdin);  freopen("output.txt", "w", stdout);
     ll t=1,n,m,x,y,z,k,p,q,u,v,l,r,cnt=0,ans=0,cnt1=0,cnt2=0,temp=0;string s,s1,s2; cin>>t;
     while(t--)
     {
