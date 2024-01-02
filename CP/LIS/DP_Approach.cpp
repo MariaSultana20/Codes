@@ -1,4 +1,7 @@
 #include <bits/stdc++.h>
+#define ll long long
+#define endl "\n"
+#define ld long double
 using namespace std;
 int longest_increasing_subsequence(vector<int>& arr)
 {
