@@ -8,7 +8,7 @@ int longest_increasing_subsequence(vector<int>& arr)
     int n=arr.size();
     vector<int>dp(n,1);  ///dp[i]=lis upto index i
     for(int i=1;i<n;i++){
-        for(int j=0;j<n;j++){
+        for(int j=0;j<i;j++){
             if(arr[j]<arr[i])
                 dp[i]=max(dp[i],dp[j]+1);
         }
