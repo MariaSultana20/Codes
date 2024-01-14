@@ -17,7 +17,7 @@ ll longest_increasing_subsequence(vector<ll>&a)
     }
     ///for(auto &x:d) cout<<x<<" "; cout<<endl;
     ll ans=0,pos=0;
-    for(int l=n-1;l>0;l--){
+    for(int l=n;l>0;l--){
         if(d[l]<INF) {
             ans=l; break;
         }
