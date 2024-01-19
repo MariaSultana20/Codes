@@ -1,5 +1,6 @@
 // C++ implementation to find longest increasing subsequence
 // in O(n Log n) time.
+// approach:1
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -66,3 +67,48 @@ int main()
 
 	return 0;
 }
+
+/**
+// approach:2
+vector<int> pathOfLIS(vector<int>& nums)
+{
+    int n = nums.size();
+    vector<int> sub, subIndex;
+    vector<int> path(n, -1);
+    for (int i = 0; i < n; ++i)
+    {
+        if (sub.empty() || sub[sub.size() - 1] < nums[i])
+        {
+            path[i] = sub.empty() ? -1 : subIndex[sub.size() - 1];
+            sub.push_back(nums[i]);
+            subIndex.push_back(i);
+        }
+        else
+        {
+            int idx = lower_bound(sub.begin(), sub.end(), nums[i]) - sub.begin();
+            path[i] = idx == 0 ? -1 : subIndex[idx - 1];
+            sub[idx] = nums[i];
+            subIndex[idx] = i;
+        }
+    }
+
+    vector<int> ans;
+    int t = subIndex[subIndex.size() - 1];
+    while (t != -1)
+    {
+        ans.push_back(nums[t]);
+        t = path[t];
+    }
+
+    reverse(ans.begin(), ans.end());
+    return ans;
+}
+
+int main()
+{
+    vector<int> arr = {10, 22, 9, 33, 21, 50, 41, 60, 80};
+    vector<int> ans = pathOfLIS(arr);
+    for(auto it : ans) cout << it << " ";
+    return 0;
+}
+*/
