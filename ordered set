@@ -1,0 +1,10 @@
+///ordered set
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+template<typename T> using ordered_set = tree<T, null_type, less_equal<T>, rb_tree_tag,
+             tree_order_statistics_node_update> ;
+///less -> less_equal  #for ordered multiset
+///less -> greater     #for descending order
+///ordered_set<ll>se;  #for declaring
+///index = se.order_of_key(ele); ele = *se.find_by_order(indx); 
