@@ -56,7 +56,7 @@ int main()
         }
         else if(choice==2){  ///query
             cin>>l>>r;
-            cout<<query(l,r,1,n,1)<<endl;
+            cout<<query(l,r,1,n,1)<<"\n";
         }
         else{
             cout<<"Invalid choice\n";
@@ -142,7 +142,7 @@ int main()
         }
         else if(choice==2){  ///query
             cin>>l>>r;
-            cout<<query(l,r,1,n,1,0)<<endl;
+            cout<<query(l,r,1,n,1,0)<<"\n";
         }
         else{
             cout<<"Invalid choice\n";
