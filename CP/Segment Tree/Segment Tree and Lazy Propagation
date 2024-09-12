@@ -2,7 +2,6 @@
 ///array tree and a both are in 1-based index
 #include<bits/stdc++.h>
 #define ll long long
-#define endl "\n"
 #define ld long double
 using namespace std;
 const int N = 1e6+10;
@@ -42,6 +41,8 @@ int query(int qi,int qj,int i,int j,int ti)
 }
 int main()
 {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    ///freopen("input.txt","r",stdin);freopen("output.txt","w",stdout);
     int n,q,l,r,k,x,choice,cnt=0;
     cin>>n>>q;
     for(int i=1;i<=n;i++){
@@ -76,7 +77,6 @@ int main()
 
 #include<bits/stdc++.h>
 #define ll long long
-#define endl "\n"
 #define ld long double
 using namespace std;
 class Tree
@@ -128,6 +128,8 @@ int query(int qi,int qj,int i,int j,int ti,int carry=0)
 }
 int main()
 {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    ///freopen("input.txt","r",stdin);freopen("output.txt","w",stdout);
     int n,q,l,r,k,x,choice,cnt=0;
     cin>>n>>q;
     for(int i=1;i<=n;i++){
