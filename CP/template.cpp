@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 #define ll long long
 #define ld long double
-#define endl "\n"
 #define EDGE pair<int,pair<int,int> >
 using namespace std;
 ///segment tree
@@ -102,7 +101,8 @@ int main()
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);  
     //freopen("input.txt", "r", stdin);  freopen("output.txt", "w", stdout);
-    ll t=1,n,m,x,y,z,k,p,q,u,v,l,r,cnt=0,ans=0,cnt1=0,cnt2=0,temp=0;string s,s1,s2; cin>>t;
+    ll t=1,tc=1; 
+    cin>>t;
     while(t--)
     {
         cin>>n;
